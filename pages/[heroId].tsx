@@ -1,4 +1,4 @@
-import { useQuery } from "@tanstack/react-query";
+import { useQuery,useQueryClient } from "@tanstack/react-query";
 import { NextPage } from "next"
 import  { useRouter } from "next/router"
 import { useEffect } from "react";
@@ -12,18 +12,26 @@ const HeroDetails:NextPage =()=>{
   if(isReady){
     heroId = router.query.heroId;
   }
+  const queryClient = useQueryClient();
 
-  const {data} = useQuery({queryKey: ["hero",heroId],queryFn: ()=>SingleHero(heroId)});
+  const {data: hero,isLoading} = useQuery({queryKey: ["hero",heroId],queryFn: ()=>SingleHero(heroId),});
 
 
-  console.log(data)
+  if(isLoading){
+    return <h1>...Loading</h1>
+  }
   return (<div>
     <h1>Super Hero Details</h1>
     <div>
-      <h1>{data?.data.alterEgo }</h1>
+      <h1>{hero?.alterEgo }</h1>
     </div>
   </div>)
 }
 
 export default HeroDetails;
 
+
+
+// initialData: (): any => {
+//   const hero = queryClient.getQueryData(['super-heroes'])?.data?.find((hero: any)=> hero.id === parseInt(heroId))
+// }
