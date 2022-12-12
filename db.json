@@ -1,17 +1,123 @@
 {
-  "superheroes" :[
-  {
-    "id": 1,
-    "name": "Batman",
-    "alterEgo": "Bruce Wayne"
-  },
-  {
-    "id": 2,
-    "name": "Superman",
-    "alterEgo": "Clark Kent"
-  },{
-    "id": 3,
-    "name": "Wonder Woman",
-    "alterEgo": "Princess Diana"
-  }
-]}
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "id": 4,
+      "name": "Cat Woman",
+      "alterEgo": "Emily"
+    },
+    {
+      "id": 5,
+      "name": "Hulk",
+      "alterEgo": "Bruce Banner"
+    },
+    {
+      "id": 6,
+      "name": "Iron Man",
+      "alterEgo": "Robert"
+    },
+    {
+      "name": "The Flash",
+      "alterEgo": "Barry Allen",
+      "id": 7
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Akhosua Ella"
+    },
+    {
+      "id": 2,
+      "name": "Stanley Obeng"
+    },
+    {
+      "id": 3,
+      "name": "Emmanuel Obeng"
+    }
+  ],
+  "users": [
+    {
+      "id": "delinuxist@gmail.com",
+      "channelId": "delinuxist"
+    },
+    {
+      "id": "flames@gmail.com",
+      "channelId": "thizflames"
+    }
+  ],
+  "channels": [
+    {
+      "id": "delinuxist",
+      "courses": [
+        "react",
+        "vue",
+        "angular"
+      ]
+    },
+    {
+      "id": "thizflames",
+      "courses": [
+        "nodejs",
+        "spring-boot",
+        "postgresql"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "label": "red"
+    },
+    {
+      "id": 2,
+      "label": "blue"
+    },
+    {
+      "id": 3,
+      "label": "green"
+    },
+    {
+      "id": 4,
+      "label": "yellow"
+    },
+    {
+      "id": 5,
+      "label": "pink"
+    },
+    {
+      "id": 6,
+      "label": "orange"
+    },
+    {
+      "id": 7,
+      "label": "white"
+    },
+    {
+      "id": 8,
+      "label": "violet"
+    },
+    {
+      "id": 9,
+      "label": "brown"
+    },
+    {
+      "id": 10,
+      "label": "purple"
+    }
+  ]
+}
