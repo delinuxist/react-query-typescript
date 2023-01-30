@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base{
+  /* modify a base style  */
+  
+}
+
+@layer components{
+  /* add your own extracted components */
+  
+}
+
+@layer utilities{
+  /* simple utility-based classes */
+ 
+}
